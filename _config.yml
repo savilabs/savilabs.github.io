@@ -1,20 +1,18 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
+---
 title: Savi Learning
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 email: contact@savilearning.org
-description: > # this means to ignore newlines until "baseurl:"
-  Build incredible learning experiences. Savi is the creator of
-  LaunchPad, a web application for creating educational projects
-  collaboratively, and offers services like coaching, workshops, and
-  courses to help educators get the most out of their projects.
-baseurl: ""
-url: "http://www.savilearning.org" # the base hostname & protocol for your site
+description: |
+  Build incredible learning experiences. Savi is the creator of LaunchPad, a web application for creating educational projects collaboratively, and offers services like coaching, workshops, and courses to help educators get the most out of their projects.
+baseurl: ''
+url: http://www.savilearning.org
 gems:
 - jemoji
 - jekyll-sitemap
