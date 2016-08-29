@@ -1,3 +1,6 @@
 _site
 .sass-cache
 .jekyll-metadata
+
+# always use the latest dependency versions
+Gemfile.lock
