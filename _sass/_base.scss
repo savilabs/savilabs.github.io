@@ -214,3 +214,36 @@ blockquote {
     }
   }
 }
+
+// Re-usable classes
+
+// List of links like a nav, use with an `ul`
+.link-list {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: inline-block;
+
+    $li-padding: 34px;
+    padding-left: $li-padding;
+    padding-right: $li-padding;
+
+    a {
+      text-decoration: none;
+      color: $text-color;
+
+      &:hover {
+        color: darken($text-color, 15%);
+      }
+    }
+
+    @include media-query($on-palm) {
+      display: block;
+      padding: $li-padding / 2;
+    }
+  }
+
+}

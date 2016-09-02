@@ -1,38 +1,35 @@
 <footer class="site-footer">
-
   <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
+    <div class="site-footer__content">
+      <ul class='link-list'>
+        {% for my_page in site.pages %}
+          {% if my_page.title %}
+            <li>
+              <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">
+                {{ my_page.title }}
+              </a>
+            </li>
           {% endif %}
+        {% endfor %}
+      </ul>
 
-          {% if site.twitter_username %}
+      <ul class='link-list site-footer_content__social'>
+        {% if site.twitter_url %}
           <li>
-            {% include icon-twitter.html username=site.twitter_username %}
+            <a href="{{ site.twitter_url }}">
+              Twitter
+            </a>
           </li>
-          {% endif %}
-        </ul>
-      </div>
+        {% endif %}
 
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
+        {% if site.facebook_url %}
+          <li>
+            <a href="{{ site.facebook_url }}">
+              Facebook
+            </a>
+          </li>
+        {% endif %}
+      </ul>
     </div>
-
   </div>
-
 </footer>
