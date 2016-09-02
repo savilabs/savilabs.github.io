@@ -5,6 +5,7 @@ collections:
   posts:
     title: Posts
     output: true
+    permalink: ":title"
   uploads:
     title: Uploads
     output: true
@@ -13,6 +14,7 @@ description: |
   Build incredible learning experiences. Savi is the creator of LaunchPad, a web application for creating educational projects collaboratively, and offers services like coaching, workshops, and courses to help educators get the most out of their projects.
 baseurl: 
 url: http://www.savilearning.org
+permalink: ":title"
 gems:
 - jemoji
 - jekyll-sitemap
