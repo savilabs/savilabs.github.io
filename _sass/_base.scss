@@ -111,11 +111,12 @@ h6 {
 }
 
 /**
-* Links
+* Links & Buttons
 */
 a {
   color: $brand-color;
-  text-decoration: none;
+  text-decoration: underline;
+  transition: color .5s;
 
   &:visited {
     color: darken($brand-color, 15%);
@@ -123,11 +124,27 @@ a {
 
   &:hover {
     color: $text-color;
-    text-decoration: underline;
   }
 }
 
+button,
+button.btn,
+a.btn,
+.btn {
+  background-color: $brand-color;
+  border-radius: 6px;
+  color: $background-color;
+  font-size: 18px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .5s;
 
+  &:hover {
+    background-color: darken($brand-color, 15%);
+    color: $background-color;
+  }
+}
 
 /**
 * Blockquotes
