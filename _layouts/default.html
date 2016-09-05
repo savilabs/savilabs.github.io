@@ -15,6 +15,43 @@
 
     {% include footer.html %}
 
+    <script
+      src="https://code.jquery.com/jquery-3.1.0.min.js"
+      integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+      crossorigin="anonymous"
+      >
+    </script>
+
+    <script>
+      $(document).ready(function() {
+        $navItems = $('.nav-items');
+
+        function setMobileNavWidth() {
+          var $width = $( window ).width();
+          if ($width <= 600) {
+            $navItems.width($width);
+          } else {
+            $navItems.css('width', 'inherit');
+
+            if (!$navItems.is(":visible")) {
+              $navItems.css('display', 'inherit');
+            }
+          }
+        }
+
+        // Set the width of the mobile nav links on load and on resize
+        setMobileNavWidth();
+        $( window ).resize(function() {
+          setMobileNavWidth();
+        });
+
+
+        // Handle displaying and hiding the mobile nav
+        $('.menu-icon').click(function() {
+          $navItems.toggle();
+        });
+      });
+    </script>
   </body>
 
 </html>

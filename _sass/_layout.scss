@@ -67,10 +67,8 @@ a.site-title {
     position: absolute;
     top: 9px;
     right: $spacing-unit / 2;
-    border: 1px solid $grey-color-light;
     border-radius: 5px;
     text-align: right;
-    width: 100%;
 
     .menu-icon {
       display: block;
@@ -91,24 +89,19 @@ a.site-title {
       }
     }
 
-    .trigger {
+    .nav-items {
+      background: $background-color;
       clear: both;
       display: none;
+      padding-top: 12px;
+      text-align: center;
+      width: 100%;
 
       .link-list {
         border-bottom: 1px solid $grey-color;
         border-top: 1px solid $grey-color;
-        margin: 0px 24px;
+        margin: 0 24px 0 36px;
       }
-    }
-
-    &:hover .trigger {
-      background: $background-color;
-      display: block;
-      padding-top: 12px;
-      margin-left: 12px;
-      text-align: center;
-      width: 100%;
     }
 
     .page-link {
