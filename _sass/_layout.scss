@@ -60,7 +60,6 @@ a.site-title {
   .page-link {
     color: $text-color;
     line-height: $base-line-height;
-
   }
 
   @include media-query($on-palm) {
