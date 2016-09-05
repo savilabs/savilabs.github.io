@@ -1,12 +1,18 @@
+$header-height: 54px;
+
 /**
  * Site header
  */
 .site-header {
-  min-height: 54px;
-  padding: 12px 0;
+  background-color: white;
+  min-height: $header-height;
+  position: fixed;
+  top: 0;
+  width: 100%;
 
-  // Positioning context for the mobile navigation icon
-  position: relative;
+  .wrapper {
+    padding-top: 12px;
+  }
 }
 
 a.site-title {
@@ -137,6 +143,7 @@ a.site-title {
 * Page content
 */
 .page-content {
+  margin-top: $header-height;
   padding: $spacing-unit 0;
 }
 
