@@ -117,6 +117,7 @@ a.site-title {
 }
 
 .site-footer {
+  margin-top: $spacing-unit--large;
   padding: 8px 0;
 
   .site-footer__content {
@@ -155,4 +156,10 @@ a.site-title {
 
 .page-heading {
   font-size: 20px;
+}
+
+// Modifiers
+
+.text--center {
+  text-align: center !important;
 }

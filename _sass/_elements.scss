@@ -36,12 +36,18 @@
   padding-top: $spacing-unit--large;
   text-align: center;
 
-  &:last-of-type{
-    padding-bottom: $spacing-unit--large;
-  }
-
   p {
     text-align: left;
+  }
+
+  &.intro-section {
+    padding-top: $spacing-unit--medium;
+
+    p.intro-text {
+      text-align: center;
+      padding-bottom: $spacing-unit;
+      padding-top: $spacing-unit;
+    }
   }
 
   .intro-text {

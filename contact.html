@@ -3,3 +3,39 @@ title: Contact
 layout: page
 ---
 
+<div class='wrapper--tight'>
+  <div class='featured-section intro-section'>
+    <h1>Contact</h1>
+
+    <p class='intro-text'>Get in touch</p>
+  </div>
+
+  <div class='row'>
+    <div class='col col--half'>
+      <p>
+        Email:
+        <a href='mailto:contact@savilearning.org'>contact@savilearning.org</a>
+      </p>
+
+      {% if site.twitter_url %}
+        <p>
+          {% include twitter-link.html %}
+        </p>
+      {% endif %}
+
+      {% if site.facebook_url %}
+        <p>
+          {% include facebook-link.html %}
+        </p>
+      {% endif %}
+    </div>
+
+    <div class='col col--half'>
+      <p>
+        Mailing Address:<br>
+        123 Foobar St<br>
+        Cabot, VT 12345
+      </p>
+    </div>
+  </div>
+</div>
