@@ -12,6 +12,8 @@ $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.428;
 
 $spacing-unit:     24px;
+$spacing-unit--medium: 44px;
+$spacing-unit--large: 144px;
 
 $text-color:       #46494C;
 $background-color: #FFFFFF;
@@ -47,5 +49,6 @@ $on-laptop:        800px;
 @import
   "grid",
   "base",
-  "layout"
+  "layout",
+  "home"
 ;

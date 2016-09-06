@@ -2,6 +2,60 @@
 layout: default
 ---
 
-<p>Home page</p>
+<div class='banner'>
+  <h2>Build incredible learning experiences.</h2>
+</div>
 
-<a class='btn' href='/launchpad'>Learn More About LaunchPad</a>
+<div class='wrapper--tight'>
+  <div class='featured-section'>
+    <p class='intro-text'>
+      Savi Learning helps teachers create better projects through
+      consulting, speaking, and our very own application — LaunchPad.
+    </p>
+  </div>
+
+  <div class='featured-section'>
+    <img
+      src='/images/launchpad.png'
+      alt='LaunchPad Logo'
+      class='home__launchpad-logo'
+      >
+
+    <p class='intro-text'>
+      LaunchPad is a revolutionary curriculum planner that supports and
+      inspires teachers to design high-quality, personalized learning
+      experiences.
+    </p>
+
+    <a class='btn' href='/launchpad'>Learn More About LaunchPad</a>
+  </div>
+
+  <div class='featured-section'>
+    <h2>Services</h2>
+
+    <p class='intro-text'>
+      We help empower teachers across the globe by consulting, training,
+      and speaking.
+    </p>
+
+    <a class='btn' href='/services'>Learn More About Our Services</a>
+  </div>
+
+  <div class='featured-section'>
+    <h2>Latest From the Blog</h2>
+
+    {% for post in site.posts limit:1 %}
+      <h4>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+          {{ post.title }}
+        </a>
+      </h4>
+
+      <p>{{ post.excerpt }}</p>
+
+      <a href="{{ post.url | prepend: site.baseurl }}">
+        Keep Reading
+      </a>
+    {% endfor %}
+  </div>
+</div>

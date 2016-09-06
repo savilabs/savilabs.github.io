@@ -134,6 +134,7 @@ a.btn,
   background-color: $brand-color;
   border-radius: 6px;
   color: $background-color;
+  display: inline-block;
   font-size: 18px;
   padding: 15px;
   text-align: center;
@@ -162,8 +163,6 @@ blockquote {
   }
 }
 
-
-
 /**
 * Wrapper
 */
@@ -184,7 +183,15 @@ blockquote {
   }
 }
 
+.wrapper--tight {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 460px;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
 
+  @extend %clearfix;
+}
 
 /**
 * Clearfix
@@ -246,4 +253,28 @@ blockquote {
     }
   }
 
+}
+
+// Centered and spaced out featured content
+.featured-section {
+  padding-top: $spacing-unit--large;
+  text-align: center;
+
+  p {
+    text-align: left;
+  }
+
+  .intro-text {
+    padding-bottom: $spacing-unit--medium;
+    padding-top: $spacing-unit--medium;
+  }
+}
+
+// Banner with centered title and content
+.banner {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 336px;
+  text-align: center;
 }
