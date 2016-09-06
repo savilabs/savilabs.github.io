@@ -45,7 +45,7 @@ layout: default
     <h2>Latest From the Blog</h2>
 
     {% for post in site.posts limit:1 %}
-      <h4>
+      <h4 class='latest-blog-title'>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
           {{ post.title }}
         </a>

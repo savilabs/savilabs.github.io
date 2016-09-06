@@ -120,11 +120,27 @@ a {
   transition: color .5s;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    color: $brand-color;
   }
 
   &:hover {
+    color: darken($brand-color, 15%);
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  a {
     color: $text-color;
+    text-decoration: none;
+    transition: color .5s;
+
+    &:visited {
+      color: $text-color;
+    }
+
+    &:hover {
+      color: darken($text-color, 15%);
+    }
   }
 }
 
@@ -260,6 +276,10 @@ blockquote {
 .featured-section {
   padding-top: $spacing-unit--large;
   text-align: center;
+
+  &:last-of-type{
+    padding-bottom: $spacing-unit--large;
+  }
 
   p {
     text-align: left;
