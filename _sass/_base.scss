@@ -27,6 +27,11 @@ body {
 
 .intro-text {
   font-size: $base-font-size * 1.286;
+  line-height: 26px;
+}
+
+p {
+  line-height: 20px;
 }
 
 
@@ -237,4 +242,3 @@ blockquote {
     }
   }
 }
-
