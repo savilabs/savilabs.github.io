@@ -16,17 +16,13 @@
       <ul class='link-list site-footer_content__social'>
         {% if site.twitter_url %}
           <li>
-            <a href="{{ site.twitter_url }}">
-              Twitter
-            </a>
+            {% include twitter-link.html %}
           </li>
         {% endif %}
 
         {% if site.facebook_url %}
           <li>
-            <a href="{{ site.facebook_url }}">
-              Facebook
-            </a>
+            {% include facebook-link.html %}
           </li>
         {% endif %}
       </ul>
