@@ -1,4 +1,4 @@
-// Dead Simple Grid (c) 2015 Vladimir Agafonkin
+// Based on Dead Simple Grid (c) 2015 Vladimir Agafonkin
 // Source: https://github.com/mourner/dead-simple-grid
 // License: MIT
 
@@ -16,5 +16,13 @@
     float: left;
     width: 100%;
     box-sizing: border-box;
+  }
+}
+
+.col--half {
+  width: 50%;
+
+  @include media-query($on-palm) {
+    width: 100%;
   }
 }
