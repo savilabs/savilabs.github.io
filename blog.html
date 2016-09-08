@@ -3,16 +3,30 @@ title: Blog
 layout: page
 ---
 
-<ul class="post__list">
-  {% for post in site.posts %}
-    <li>
-      <span class="post__meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<div class='wrapper--tight'>
+  <div class='featured-section intro-section'>
+    <h1>Blog</h1>
 
-      <h2>
-        <a class="post__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
-    </li>
-  {% endfor %}
-</ul>
+    <p class='intro-text'>Updates, tips, and news from the team</p>
+  </div>
 
-<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <div class="post__list">
+    {% for post in site.posts %}
+      <div class='post__preview'>
+        <h2>
+          <a class="post__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+
+        {% include post_meta.html post=post %}
+
+        <p>{{ post.excerpt }}</p>
+
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          Keep Reading
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+
+  <p class="rss-subscribe text--center">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+</div>
