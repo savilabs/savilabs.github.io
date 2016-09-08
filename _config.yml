@@ -22,3 +22,11 @@ gems:
 markdown: kramdown
 twitter_url: https://twitter.com/launchpadmoxie
 facebook_url: https://www.facebook.com/people/Launch-Pad/100009444452196
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author:

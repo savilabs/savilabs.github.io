@@ -2,6 +2,7 @@
 title: Tristique Porta Lorem Nullam
 date: 2016-09-08 11:41:00 -04:00
 author: Brett Chalupa
+layout: post
 ---
 
 Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.

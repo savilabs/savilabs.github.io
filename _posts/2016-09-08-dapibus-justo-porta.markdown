@@ -2,6 +2,7 @@
 title: Dapibus Justo Porta
 date: 2016-09-08 11:42:00 -04:00
 author: Brett Chalupa
+layout: post
 ---
 
 Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui. Nulla vitae elit libero, a pharetra augue.
