@@ -11,9 +11,9 @@ $bold-font-weight: 700;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.428;
 
-$spacing-unit:     24px;
-$spacing-unit--medium: 44px;
-$spacing-unit--large: 144px;
+$spacing-unit: 24px;
+$spacing-unit--medium: $spacing-unit * 2;
+$spacing-unit--large: $spacing-unit * 6;
 
 $text-color:       #46494C;
 $background-color: #FFFFFF;
