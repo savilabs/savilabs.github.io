@@ -8,6 +8,13 @@ collections:
   uploads:
     title: Uploads
     output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    author: 
 email: contact@savilearning.org
 description: |
   Build incredible learning experiences. Savi is the creator of LaunchPad, a web application for creating educational projects collaboratively, and offers services like coaching, workshops, and courses to help educators get the most out of their projects.
@@ -22,11 +29,3 @@ gems:
 markdown: kramdown
 twitter_url: https://twitter.com/launchpadmoxie
 facebook_url: https://www.facebook.com/people/Launch-Pad/100009444452196
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      author:
