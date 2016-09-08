@@ -1,6 +1,7 @@
 ---
 title: Tellus Consectetur
 date: 2016-09-08 11:59:00 -04:00
+layout: post
 ---
 
 Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
