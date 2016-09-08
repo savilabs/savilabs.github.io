@@ -1,0 +1,18 @@
+// Styles for blog posts
+
+.post {
+  padding-top: $spacing-unit--medium;
+}
+
+.post__header {
+  padding-bottom: $spacing-unit;
+  text-align: center;
+}
+
+.post__navigation {
+  padding-top: $spacing-unit--medium;
+
+  .next {
+    float: right;
+  }
+}
