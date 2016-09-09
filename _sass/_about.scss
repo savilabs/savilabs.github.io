@@ -1,0 +1,42 @@
+// Styles for the About page
+
+.banner--about {
+  background-image: url('/images/about--banner.png');
+}
+
+.about {
+  .featured-section {
+    p.intro-text {
+      padding-top: 0px;
+      padding-bottom: $spacing-unit;
+    }
+  }
+}
+
+.about__team {
+  text-align: center;
+
+  p {
+    text-align: left;
+  }
+}
+
+.person {
+  padding-left: $spacing-unit--medium;
+  padding-right: $spacing-unit--medium;
+  text-align: center;
+
+  .person__photo {
+    width: 100px;
+    padding-bottom: $spacing-unit;
+  }
+
+  .person__name {
+    padding-bottom: $spacing-unit;
+  }
+
+  .person__bio {
+    padding-bottom: $spacing-unit--medium;
+    text-align: left;
+  }
+}
