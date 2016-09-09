@@ -11,6 +11,15 @@
   display: table;
 }
 
+.row {
+  padding-top: $spacing-unit--large;
+
+  &.padding-top-md {
+    padding-top: $spacing-unit--medium;
+  }
+}
+
+
 @media only screen {
   .col {
     float: left;
@@ -21,6 +30,14 @@
 
 .col--half {
   width: 50%;
+
+  @include media-query($on-palm) {
+    width: 100%;
+  }
+}
+
+.col--third {
+  width: 33.33%;
 
   @include media-query($on-palm) {
     width: 100%;
