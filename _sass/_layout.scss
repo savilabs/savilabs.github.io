@@ -163,3 +163,11 @@ a.site-title {
 .text--center {
   text-align: center !important;
 }
+
+// Use for positioning elements off screen while still being in the DOM,
+// like titles that are replaced with images
+.off-screen {
+  height: 0;
+  margin: 0 0 0 -9999px;
+  padding: 0;
+}

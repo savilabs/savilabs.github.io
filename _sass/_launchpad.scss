@@ -1,0 +1,28 @@
+// Styles for the LaunchPad page
+
+.launchpad {
+  max-width: 560px;
+
+  .featured-section {
+    .featured--section__title {
+      margin-bottom: $spacing-unit;
+    }
+  }
+}
+
+.launchpad__logo {
+  max-width: 320px;
+  padding-bottom: $spacing-unit--medium;
+}
+
+.launchpad__features {
+  list-style: none;
+
+  li {
+    margin-bottom: $spacing-unit;
+  }
+}
+
+.launchpad__screenshot {
+  padding-bottom: $spacing-unit--medium;
+}
