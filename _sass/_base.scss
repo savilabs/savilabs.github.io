@@ -168,6 +168,7 @@ a.btn,
 
   @include media-query($on-palm) {
     display: block;
+    margin: 0 auto;
     width: inherit;
   }
 
