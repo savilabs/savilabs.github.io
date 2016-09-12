@@ -53,10 +53,6 @@ a.site-title {
       }
     }
   }
-  .menu-icon {
-    display: none;
-  }
-
   .page-link {
     color: $text-color;
     line-height: $base-line-height;
@@ -64,29 +60,10 @@ a.site-title {
 
   @include media-query($on-palm) {
     position: absolute;
-    top: 9px;
+    top: $header-height;
     right: $spacing-unit / 2;
     border-radius: 5px;
     text-align: right;
-
-    .menu-icon {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 26px;
-      line-height: 0;
-      padding-top: 10px;
-      text-align: center;
-
-      > svg {
-        width: 18px;
-        height: 15px;
-
-        path {
-          fill: $grey-color-dark;
-        }
-      }
-    }
 
     .nav-items {
       background: $background-color;
@@ -115,6 +92,30 @@ a.site-title {
     }
   }
 }
+
+.menu-icon {
+  display: none;
+
+  @include media-query($on-palm) {
+    display: block;
+    float: right;
+    width: 36px;
+    height: 26px;
+    line-height: 0;
+    padding-top: 10px;
+    text-align: center;
+
+    > svg {
+      width: 18px;
+      height: 15px;
+
+      path {
+        fill: $grey-color-dark;
+      }
+    }
+  }
+}
+
 
 .site-footer {
   margin-top: $spacing-unit--large;
