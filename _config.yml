@@ -31,5 +31,5 @@ twitter_url: https://twitter.com/launchpadmoxie
 facebook_url: https://www.facebook.com/people/Launch-Pad/100009444452196
 twitter:
   username: launchpadmoxie
-logo: /images/brandmark.png
+logo: "/images/brandmark.png"
 google_site_verification: SCsHiHG1HGcd2Os-730zhF9mhfMQbUCmHNE8aIQiSMc
