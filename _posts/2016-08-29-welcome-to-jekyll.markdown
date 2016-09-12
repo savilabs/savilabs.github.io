@@ -4,7 +4,7 @@ date: 2016-08-29 15:33:00 -04:00
 categories:
 - jekyll
 - update
-author: Peter Stratman
+author: Jekyll
 sitemap: false
 layout: post
 ---
