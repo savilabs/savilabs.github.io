@@ -132,8 +132,14 @@ a.site-title {
       margin-right: 24px;
     }
 
+    .link-list {
+      li {
+        padding-bottom: $spacing-unit;
+      }
+    }
+
     .site-footer_content__social {
-      margin-top: 34px;
+      margin-top: $spacing-unit / 2;
 
       @include media-query($on-palm) {
         margin-top: 0;
