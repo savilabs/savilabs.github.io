@@ -59,11 +59,12 @@ a.site-title {
   }
 
   @include media-query($on-palm) {
-    position: absolute;
-    top: $header-height;
-    right: $spacing-unit / 2;
     border-radius: 5px;
+    position: absolute;
+    right: 0;
     text-align: right;
+    top: $header-height;
+    width: 100%;
 
     .nav-items {
       background: $background-color;
@@ -76,7 +77,7 @@ a.site-title {
       .link-list {
         border-bottom: 1px solid $grey-color;
         border-top: 1px solid $grey-color;
-        margin: 0 24px 0 36px;
+        margin: 0 24px;
       }
     }
 
