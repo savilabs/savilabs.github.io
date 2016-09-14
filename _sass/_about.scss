@@ -35,8 +35,11 @@
     padding-bottom: $spacing-unit;
   }
 
-  .person__bio {
-    padding-bottom: $spacing-unit--medium;
+  p {
     text-align: left;
+
+    &:last-of-type {
+      padding-bottom: $spacing-unit--medium;
+    }
   }
 }
