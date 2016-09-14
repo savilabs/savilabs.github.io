@@ -1,12 +1,18 @@
 // Styles for the LaunchPad page
 
 .launchpad {
-  max-width: 560px;
+  .wrapper--tight {
+    max-width: 560px;
+  }
 
   .featured-section {
     .featured--section__title {
       margin-bottom: $spacing-unit;
     }
+  }
+
+  p, li {
+    font-size: $base-font-size * 1.2;
   }
 }
 
@@ -25,5 +31,20 @@
 }
 
 .launchpad__screenshot {
+  margin: 0 auto;
+  max-width: 920px;
   padding-bottom: $spacing-unit--medium;
+  width: 100%;
+
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+
+  .featured--section__title {
+    padding-bottom: $spacing-unit;
+  }
+
+  img {
+    padding-bottom: $spacing-unit--medium;
+  }
 }
