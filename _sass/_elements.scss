@@ -65,6 +65,7 @@
   text-align: center;
 
   &.with-image {
+    background-position-y: center;
     background-size: cover;
 
     .banner__title {
