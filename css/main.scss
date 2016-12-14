@@ -21,7 +21,7 @@ $background-color: #FFFFFF;
 $brand-color:      #4EBBEA;
 
 $grey-color:       #C5C3C6;
-$grey-color-light: lighten($grey-color, 40%);
+$grey-color-light: rgba($grey-color, .5);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
@@ -43,7 +43,6 @@ $on-laptop:        800px;
     @content;
   }
 }
-
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
