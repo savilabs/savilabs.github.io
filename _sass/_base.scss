@@ -225,6 +225,10 @@ blockquote {
   @extend %clearfix;
 }
 
+.accented {
+  color: $accent-color;
+}
+
 /**
 * Clearfix
 */
