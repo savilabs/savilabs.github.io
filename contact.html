@@ -11,32 +11,22 @@ layout: page
     <p class='intro-text'>Get in touch</p>
   </div>
 
-  <div class='row padding-top-md'>
-    <div class='col col--half'>
-      <p>
-        Email:
-        <a href='mailto:contact@savilearning.org'>contact@savilearning.org</a>
-      </p>
+  <div class='centered padding-top-md'>
+    <p>
+      Email: <a href='mailto:{{ site.email }}'>{{ site.email }}</a>
+    </p>
 
-      {% if site.twitter_url %}
-        <p>
+      <p>
+        {% if site.twitter_url %}
           {% include twitter-link.html %}
-        </p>
-      {% endif %}
+        {% endif %}
 
-      {% if site.facebook_url %}
-        <p>
+        &nbsp;&#8226;&nbsp;
+
+        {% if site.facebook_url %}
           {% include facebook-link.html %}
-        </p>
-      {% endif %}
-    </div>
-
-    <div class='col col--half'>
-      <p>
-        Mailing Address:<br>
-        123 Foobar St<br>
-        Cabot, VT 12345
+        {% endif %}
       </p>
-    </div>
+
   </div>
 </div>
