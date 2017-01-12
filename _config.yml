@@ -14,12 +14,12 @@ defaults:
     type: posts
   values:
     layout: post
-    author:
+    author: 
 email: contact@savilabs.org
 description: Build incredible learning experiences. Savi creates LaunchPad, an application
   for creating educational projects collaboratively, and offers services to help educators
   get the most out of their projects.
-baseurl:
+baseurl: 
 url: http://www.savilabs.org
 permalink: ":title"
 gems:
