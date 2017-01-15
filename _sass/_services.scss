@@ -17,8 +17,11 @@
     padding-bottom: $spacing-unit;
   }
 
-  .service__description {
-    padding-bottom: $spacing-unit--medium;
+  .service__description,
+  .service__list,
+  .service__subtitle {
     text-align: left;
   }
+
+  padding-bottom: $spacing-unit--medium;
 }
