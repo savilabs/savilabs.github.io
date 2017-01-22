@@ -12,3 +12,14 @@
 .banner--home {
   background-image: url('/images/home--banner.jpg');
 }
+
+.home__launchpad__features {
+  @extend .launchpad__features;
+  margin-bottom: $spacing-unit--medium;
+}
+
+.featured-section {
+  .launchpad__after-callout {
+    padding-bottom: 0;
+  }
+}
