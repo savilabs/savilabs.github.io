@@ -1,10 +1,10 @@
-// Styles for the About page
+// Styles for the Our Story page
 
-.banner--about {
-  background-image: url('/images/about--banner.jpg');
+.banner--our-story {
+  background-image: url('/images/our-story--banner.jpg');
 }
 
-.about {
+.our-story {
   .featured-section {
     p.intro-text {
       padding-top: 0px;
@@ -13,7 +13,7 @@
   }
 }
 
-.about__team {
+.our-story__team {
   text-align: center;
 
   p {
