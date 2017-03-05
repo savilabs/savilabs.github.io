@@ -48,21 +48,23 @@ layout: fw_page
     <p class='intro-text launchpad__after-callout'>Whether you're designing a mini-project or creating a holistic learning expedition, LaunchPad helps you build personalized projects that make learning engaging, relevant, and fun!</p>
   </div>
 
-  <div class='featured-section'>
-    <h2>Latest From the Blog</h2>
+  {% if site.posts.length > 0 %}
+    <div class='featured-section'>
+      <h2>Latest From the Blog</h2>
 
-    {% for post in site.posts limit:1 %}
-      <h4 class='latest-blog-title'>
-        <a class="post__link" href="{{ post.url | prepend: site.baseurl }}">
-          {{ post.title }}
+      {% for post in site.posts limit:1 %}
+        <h4 class='latest-blog-title'>
+          <a class="post__link" href="{{ post.url | prepend: site.baseurl }}">
+            {{ post.title }}
+          </a>
+        </h4>
+
+        <p>{{ post.excerpt }}</p>
+
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          Keep Reading
         </a>
-      </h4>
-
-      <p>{{ post.excerpt }}</p>
-
-      <a href="{{ post.url | prepend: site.baseurl }}">
-        Keep Reading
-      </a>
-    {% endfor %}
-  </div>
+      {% endfor %}
+    </div>
+  {% endif %}
 </div>
