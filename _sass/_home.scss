@@ -14,10 +14,13 @@
 }
 
 .home__launchpad__features {
-  @extend .launchpad__features;
   list-style: disc;
   margin-bottom: $spacing-unit--medium;
   text-align: left;
+
+  li {
+    margin-bottom: $spacing-unit / 6;
+  }
 }
 
 .featured-section {

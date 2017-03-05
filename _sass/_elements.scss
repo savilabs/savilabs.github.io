@@ -53,12 +53,10 @@
   .intro-text {
     padding-bottom: $spacing-unit;
     padding-top: $spacing-unit;
-    text-align: justify;
 
     // for multi-paragraph intro spacing
     p {
       padding-bottom: $spacing-unit;
-      text-align: justify;
     }
   }
 }
