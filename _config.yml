@@ -26,9 +26,9 @@ gems:
 - jekyll-feed
 - jekyll-seo-tag
 markdown: kramdown
-twitter_url: https://twitter.com/launchpadmoxie
-facebook_url: https://www.facebook.com/people/Launch-Pad/100009444452196
+twitter_url: https://twitter.com/SaviEdLabs
+facebook_url: https://www.facebook.com/SaviEdLabs/
 twitter:
-  username: launchpadmoxie
+  username: SaviEdLabs
 logo: "/images/brandmark.png"
 google_site_verification: pLAzWYTrf4BpcLJuQ6kbJcM5oeFQF9uGZve8dVYBCHI
