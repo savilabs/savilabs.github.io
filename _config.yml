@@ -15,7 +15,7 @@ defaults:
   values:
     layout: post
     author: 
-email: hello@savilearning.org
+email: contact@savilabs.org
 description: Build incredible learning experiences. Savi helps students and teachers create and share better projects through personalized coaching, workshops, and our very own application — LaunchPad.
 baseurl: 
 url: http://www.savilabs.org
