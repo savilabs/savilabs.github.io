@@ -3,7 +3,7 @@
     <div class="site-footer__content">
       <ul class='link-list'>
         {% for my_page in site.pages %}
-          {% if my_page.title %}
+          {% if my_page.title and my_page.title != 'Not Found (404)' %}
             <li>
               <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">
                 {{ my_page.title }}
