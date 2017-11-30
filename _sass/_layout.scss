@@ -155,6 +155,10 @@ a.site-title {
   }
 }
 
+.site-footer__details {
+  margin: 12px auto;
+}
+
 @include media-query($on-laptop) {
 }
 
